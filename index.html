@@ -6,7 +6,8 @@
     <script src="app/lib/angular.min.js">a</script>
     <script src="app/app.js"></script>
   </head>
-  <body ng-init="numbers={1,2,3,4]">
+  <body>
+    <header ng-include="'header.html'"></header>
     <div ng-controller="dataController">
         <ul>
             <li ng-repeat="news in latestNews">{{news}}</li>
