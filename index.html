@@ -12,25 +12,46 @@
     <script src="app/app.js"></script>
   </head>
   <body>
-        <div class="container-fluid p-0">
-            <div class="row">
-                <header>
-                    <div class="hero-image position-relative overflow-hidden p-3 p-md-5 text-center ">
-                        <div ng-include="'header.html'"></div>
+        <div class="container-fluid p-0 vh-100"> 
+            <header>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-0 col-lg-1"></div>
+                        <div class="col-md-1 col-lg-1 col-sm-1 banner">
+                            <h1><a href="#"><img src="assets/logo.png" alt="smith & nephew" class="logo"></a></h1>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="hero-image position-relative overflow-hidden text-center">
+                    <div class="row navigation">
+                        <nav ng-include="'nav-bar.html'"></nav>
+                        <div>Search bar placeholder</div>
+                    </div>
+                        
 
                         <h1 class="display-3 font-weight-bold text-center text-wrap">
-                                Welcome to <br> Global Business Services
+                                Welcome to <br> <strong>Global Business Services</strong>
                         </h1>
                         <h3>Search Placeholder</h3>                      
                     </div>
-                </header>
-            </div>    
-                    <h1>Hello World</h1>    
-                <div ng-controller="dataController">
+                </div>        
+            </header> 
+            <main> 
+                <section>
+                    <!-- contains links/descriptions -->
+                </section>
+               
+                <section ng-controller="dataController">
+                    <article>
+                        <!-- use ng-reapat to display articles here -->
+                    </article>
                     <ul>
                         <li ng-repeat="news in latestNews">{{news}}</li>
                     </ul>
-                </div>
+                </section>
+            </main>
         </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
