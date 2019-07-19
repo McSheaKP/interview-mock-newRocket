@@ -33,7 +33,9 @@ h1 {
     position: relative;
   }
 
-
+.nav-pills{
+    padding-right: 150px;
+}
 
 main{
   background: #eee;
@@ -43,7 +45,7 @@ main{
 }
 
 .navigation{
-    display: inline;
+    background: rgba(255,255,255,0.5);
 }
 
 
