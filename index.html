@@ -34,24 +34,37 @@
                     <div class="hero-image position-relative overflow-hidden text-center">
                         <nav class="navigation" ng-include="'nav-bar.html'"></nav>
 
-                        <h1 class="display-3 font-weight-bold text-center text-wrap">
+                        <h1 class="hero-img font-weight-bold text-center text-wrap">
                                 Welcome to <br> <strong>Global Business Services</strong>
                         </h1>
-                        <h3>Search Placeholder</h3>                      
+                        <div class="form-group has-feedback center-search">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <i class="fas fa-search form-control-feedback"></i>
+                        </div> 
                     </div>
                 </div>        
             </header> 
             <main> 
                 <div class="container">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-md-8">
                             <section>
                                 <!-- contains links/descriptions -->
+                                <div class="row">
+                                    <div class="panel panel-default col-md-4">
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                        <div class="panel-footer">Panel footer</div>
+                                    </div>
                                     
-                                    <!-- <a href="#"><img src="assets/it.png" alt="IT services link"></a>
+                                <div>
+                                
+<!--                                     
+                                    <a href="#"><img src="assets/it.png" alt="IT services link"></a>
                                     <a href="#"><img src="assets/pr.png" alt="procurement services link"></a>
                                     <a href="#"><img src="assets/hr.png" alt="HR Services Link"></a> -->
-                                </div>
+                              
                             </section>
                         
                             <section ng-controller="dataController">
@@ -63,7 +76,7 @@
                                 </ul>
                             </section>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <aside>
                                 MY IT TICKETS
                             </aside>
@@ -71,9 +84,12 @@
                                 DO YOU NEED HELP?
                             </aside>
                         </div>
+
                     </div>  
-                </div>  
+                </div> 
+                 
             </main>
+            
         </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
